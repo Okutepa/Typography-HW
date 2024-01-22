@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.hidden {
+    display: none;
+}
+
+#container {
+    margin: 20px auto;
+    width: 428px;
+    border: solid 1px #333;
+    background: #efefef;
+    border-radius: 10px;
+}
+
+#mainContent {
+        display: grid;
+        grid-template-columns: repeat(4, 85px);
+        grid-column-gap: 16px;
+        padding-left: 20px;
+        padding-right: 20px;
+}
+
+article {
+    grid-column: 1/-1;
+}
+
+.image-container {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    height: 400px;
+    width: 389px;
+    overflow: hidden;
+}
+
+.fit-image {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
